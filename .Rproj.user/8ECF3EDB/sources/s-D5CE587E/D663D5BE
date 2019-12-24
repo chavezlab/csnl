@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1618140437",
+    "hash" : "0",
     "id" : "D663D5BE",
-    "lastKnownWriteTime" : 1577175704,
-    "last_content_update" : 1577175704018,
+    "lastKnownWriteTime" : 1577175991,
+    "last_content_update" : 1577175991280,
     "path" : "C:/Users/rober/Google Drive/CSNL/R_package/csnl/csnl/R/ggbarmaker.R",
     "project_path" : "R/ggbarmaker.R",
     "properties" : {
-        "cursorPosition" : "155,0",
+        "cursorPosition" : "129,89",
         "scrollLine" : "105",
         "tempName" : "Untitled1"
     },

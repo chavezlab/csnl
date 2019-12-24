@@ -72,7 +72,7 @@ ggbarmaker <- function (dv, groups, factor = NULL, id = NULL, groups_between = F
       ggplot(df, aes(Group.1, x, fill = Group.2)) + geom_bar(position = position_dodge(0.9),
                                                              stat = "identity", size = 0.5) + geom_bar(position = position_dodge(0.9),
                                                                                                        stat = "identity", colour = "black", size = 0.5,
-                                                                                                       show_guide = FALSE) + scale_fill_brewer(palette = palette) +
+                                                                                                       show.legend = FALSE) + scale_fill_brewer(palette = palette) +
         geom_errorbar(aes(ymin = eb_l, ymax = eb_h),
                       size = 0.5, width = 0.3, position = position_dodge(0.9)) +
         xlab(labx) + ylab(laby) + guides(fill = guide_legend(title = deparse(substitute(factor))))
@@ -145,7 +145,7 @@ ggbarmaker <- function (dv, groups, factor = NULL, id = NULL, groups_between = F
         lab_fac <- deparse(substitute(factor))
         ggplot(dfwc, aes(groups, dv, fill = factor)) +
           geom_bar(position = position_dodge(), stat = "identity",  size = 0.5) +
-          geom_bar(position = position_dodge(), stat = "identity", color = "black", size = 0.5, show_guide = FALSE) +
+          geom_bar(position = position_dodge(), stat = "identity", color = "black", size = 0.5, show.legend = FALSE) +
           scale_fill_brewer(palette = palette, name = lab_fac) +
           geom_errorbar(aes(ymin = dv - ci, ymax = dv + ci), width = 0.3, size = 0.3, position = position_dodge(0.9)) + xlab(labx) +
           ylab(laby)
