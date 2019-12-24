@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1577175616792.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1618140437",
+    "id" : "D663D5BE",
+    "lastKnownWriteTime" : 1577175704,
+    "last_content_update" : 1577175704018,
+    "path" : "C:/Users/rober/Google Drive/CSNL/R_package/csnl/csnl/R/ggbarmaker.R",
+    "project_path" : "R/ggbarmaker.R",
+    "properties" : {
+        "cursorPosition" : "155,0",
+        "scrollLine" : "105",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
