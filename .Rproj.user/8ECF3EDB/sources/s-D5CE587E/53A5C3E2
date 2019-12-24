@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1577176198152.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "924492692",
+    "id" : "53A5C3E2",
+    "lastKnownWriteTime" : 1577176182,
+    "last_content_update" : 1577176182,
+    "path" : "C:/Users/rober/Google Drive/CSNL/R_package/csnl/csnl/NAMESPACE",
+    "project_path" : "NAMESPACE",
+    "properties" : {
+    },
+    "read_only" : true,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_namespace"
+}
