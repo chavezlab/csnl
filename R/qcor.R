@@ -4,6 +4,7 @@
 #' @param x First numeric vector.
 #' @param y Second numeric vector.
 #' @author Robert S. Chavez
+#' @export
 #' @examples
 #' a <- rnorm(100,100,15)
 #' b <- rnorm(100,90,15)

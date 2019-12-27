@@ -8,6 +8,7 @@
 #' @param na.rm A boolean that indicates whether to ignore NA's.
 #' @param conf.interval	The percent range of the confidence interval, 95 percent default.
 #' @author Winston Chang
+#' @export
 #' @note See : http://www.cookbook-r.com/Graphs/Multiple_graphs_on_one_page_(ggplot2)/
 #' @examples
 #' x <- rnorm(100,100,15)

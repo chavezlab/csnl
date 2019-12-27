@@ -5,6 +5,7 @@
 #' @param fsl_zstats A path to a text file from fslmeants output.
 #' @param subs_csv A .csv file with group, subject, and target columns that will be used in the analysis.
 #' @author Robert S. Chavez
+#' @export
 #' @examples
 #' rr_df_maker("~/data/fsl_output.txt", "~/data/subect_list.csv")
 

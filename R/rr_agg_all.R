@@ -8,6 +8,7 @@
 #' @param subs_df The 'subs' data frame from rr_df_maker() output.
 #' @param cor_meth Correlation method from cor() used in calculation. Default = 'spearman'.
 #' @author Robert S. Chavez
+#' @export
 #' @note This function relies on the output from rr_df_maker().
 #' @examples
 #' rr_agg_all(subs, cor_meth = spearman)

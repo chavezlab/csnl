@@ -9,6 +9,7 @@
 #' @param group The 'group' column from the rr_noself_noNA data frame from rr_df_maker.
 #' @param cor_meth Correlation method from cor() used in calculation. Default = 'spearman'.
 #' @author Robert S. Chavez
+#' @export
 #' @note This function relies on the output from rr_df_maker().
 #' @examples
 #' rr_agg(1,1,1) # self-congruent

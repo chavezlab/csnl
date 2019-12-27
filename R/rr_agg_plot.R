@@ -3,6 +3,7 @@
 #' Creates plot for aggregated round-robin recapitulation analysis
 #' @param consensus_df data frame in the form from rr_agg_all().
 #' @author Robert S. Chavez
+#' @export
 #' @note Requires output from rr_agg_all()
 #' @examples
 #' rr_agg_plot(consensus_df)

@@ -5,6 +5,7 @@
 #' @param lower logical indicating selection of lower or upper diagonal
 #' @param melt logical indicating whether or not to melt the matrix into a data frame
 #' @author Robert S. Chavez
+#' @export
 #' @examples
 #' cars_dsm <- 1-cor(mtcars)
 #' dsm_mask(cars_dsm)

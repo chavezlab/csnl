@@ -4,6 +4,7 @@
 #' @param x Numeric vector.
 #' @param na.rm logical indicating removal of NAs before calculation.
 #' @author Robert S. Chavez
+#' @export
 #' @examples
 #' x <- rnorm(100,100,15)
 #' std_error(x)

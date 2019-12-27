@@ -7,6 +7,7 @@
 #' @param id The name of a varible that identifieseach subject for withins-subject designs.
 #' @param groups_between The 'groups' variable is a between subjects factor.
 #' @param palette Select RColorBrewer palette.
+#' @export
 #' @author Robert S. Chavez
 #' @note You must manually adjust y-axis range using the ggplot2 function coord_cartesian().
 #' @examples
