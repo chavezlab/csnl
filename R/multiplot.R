@@ -16,7 +16,7 @@
 #' p2 <- qplot(y)
 #' multiplot(p1,p2)
 
-mulitplot <- function (..., plotlist = NULL, file, cols = 1, layout = NULL)
+multiplot <- function (..., plotlist = NULL, file, cols = 1, layout = NULL)
 {
   require(grid)
   plots <- c(list(...), plotlist)
