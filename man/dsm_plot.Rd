@@ -4,14 +4,19 @@
 \alias{dsm_plot}
 \title{Off-diagonal Plotting Function for Dissimlarity Matricies}
 \usage{
-dsm_plot(df, col_n = 8, color_dir = 1, rev_fac = FALSE, melt = TRUE)
+dsm_plot(dsm, col_n = 8, color_dir = 1, rev_fac = FALSE,
+  melt = TRUE)
 }
 \arguments{
+\item{dsm}{a (dis)similarity matrix}
+
+\item{col_n}{number of colors used in palette}
+
+\item{color_dir}{direction of the color ramp. 1 == forward, -1 == reverse}
+
+\item{rev_fac}{logical indicating whether to reverse the factor level order}
+
 \item{melt}{logical indicating whether or not to melt the matrix into a data frame prior to plotting}
-
-\item{dsm}{a single matrix}
-
-\item{lower}{logical indicating selection of lower or upper diagonal}
 }
 \description{
 This function will plot the off-diagonal elements of a dissmilarity matrix.

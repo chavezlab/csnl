@@ -1,8 +1,10 @@
 #' Off-diagonal Plotting Function for Dissimlarity Matricies
 #'
 #' This function will plot the off-diagonal elements of a dissmilarity matrix.
-#' @param dsm a single matrix
-#' @param lower logical indicating selection of lower or upper diagonal
+#' @param dsm a (dis)similarity matrix
+#' @param col_n number of colors used in palette
+#' @param color_dir direction of the color ramp. 1 == forward, -1 == reverse
+#' @param rev_fac logical indicating whether to reverse the factor level order
 #' @param melt logical indicating whether or not to melt the matrix into a data frame prior to plotting
 #' @author Robert S. Chavez
 #' @export
@@ -10,7 +12,7 @@
 #' cars_dsm <- 1-cor(mtcars)
 #' dsm_plot(cars_dsm)
 
-dsm_plot <- function(df, col_n = 8, color_dir = 1, rev_fac=FALSE, melt=TRUE){
+dsm_plot <- function(dsm, col_n = 8, color_dir = 1, rev_fac=FALSE, melt=TRUE){
 
   library(ggplot2)
   library(colorRamps)

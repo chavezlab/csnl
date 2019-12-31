@@ -4,14 +4,8 @@
 \alias{normDataWithin}
 \title{Normalizing helper function for within-subjects data..}
 \usage{
-normDataWithin(
-  data = NULL,
-  idvar,
-  measurevar,
-  betweenvars = NULL,
-  na.rm = FALSE,
-  .drop = TRUE
-)
+normDataWithin(data = NULL, idvar, measurevar, betweenvars = NULL,
+  na.rm = FALSE, .drop = TRUE)
 }
 \arguments{
 \item{data}{A data frame.}
