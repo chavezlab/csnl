@@ -19,7 +19,7 @@ dsm_plot <- function(dsm, col_n = 8, color_dir = 1, rev_fac=FALSE, melt=TRUE){
   library(viridis)
 
   if(melt==TRUE){
-    df <- dsm_mask(df)
+    df <- dsm_mask(dsm)
     }
 
   if(rev_fac==FALSE){
@@ -35,7 +35,7 @@ dsm_plot <- function(dsm, col_n = 8, color_dir = 1, rev_fac=FALSE, melt=TRUE){
   }
 
   else{
-    df <- df[which(is.na(df[,3])==FALSE),]
+    df <- dsm[which(is.na(df[,3])==FALSE),]
     df[,1] <- factor(df[,1])
     df[,2] <- factor(df[,2])
     df[,2] <- factor(df[,2],levels = rev(levels(df[,2])))
