@@ -10,6 +10,7 @@
 #' rr_df_maker("~/data/fsl_output.txt", "~/data/subect_list.csv")
 
 rr_df_maker <- function(fsl_zstats, subs_csv){
+  library(dplyr)
 
   raw_zstats <<- read.table(fsl_zstats, quote="\"", comment.char="",skip = 3)
 
