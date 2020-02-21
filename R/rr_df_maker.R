@@ -18,12 +18,13 @@ rr_df_maker <- function(fsl_zstats, subs_csv){
 
   rr_df <<- cbind(subs, raw_zstats)
 
-  rr_noself <<- rr_df
+  rr_noself <- rr_df
   for(i in 1:length(rr_noself$subject)){
     if(rr_noself[i,2] == rr_noself[i,3]){
       rr_noself[i,] <-c(rr_noself[i,1], rr_noself[i,2], rr_noself[i,3],rep(NA, length(rr_noself[1,])-3))
     }
   }
+  rr_noself <<- rr_noself
 
   rr_noself_noNA <<- rr_df %>% filter(subject != target)
   rr_selfonly <<- rr_df %>% filter(subject == target)
