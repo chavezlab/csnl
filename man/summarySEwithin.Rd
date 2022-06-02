@@ -4,9 +4,16 @@
 \alias{summarySEwithin}
 \title{Summarize data for within-subjects designs.}
 \usage{
-summarySEwithin(data = NULL, measurevar, betweenvars = NULL,
-  withinvars = NULL, idvar = NULL, na.rm = FALSE,
-  conf.interval = 0.95, .drop = TRUE)
+summarySEwithin(
+  data = NULL,
+  measurevar,
+  betweenvars = NULL,
+  withinvars = NULL,
+  idvar = NULL,
+  na.rm = FALSE,
+  conf.interval = 0.95,
+  .drop = TRUE
+)
 }
 \arguments{
 \item{data}{A data frame.}

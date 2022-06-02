@@ -4,8 +4,7 @@
 \alias{dsm_plot}
 \title{Off-diagonal Plotting Function for Dissimlarity Matricies}
 \usage{
-dsm_plot(dsm, col_n = 8, color_dir = 1, rev_fac = FALSE,
-  melt = TRUE)
+dsm_plot(dsm, col_n = 8, color_dir = 1, rev_fac = FALSE, melt = TRUE)
 }
 \arguments{
 \item{dsm}{a (dis)similarity matrix}

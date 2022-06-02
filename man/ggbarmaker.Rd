@@ -4,8 +4,14 @@
 \alias{ggbarmaker}
 \title{Easy Bar Graph Maker for ggplot2}
 \usage{
-ggbarmaker(dv, groups, factor = NULL, id = NULL,
-  groups_between = FALSE, palette = "Set1")
+ggbarmaker(
+  dv,
+  groups,
+  factor = NULL,
+  id = NULL,
+  groups_between = FALSE,
+  palette = "Set1"
+)
 }
 \arguments{
 \item{dv}{Dependent variable vector}
