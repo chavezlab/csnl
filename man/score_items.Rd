@@ -7,13 +7,13 @@
 score_items(df, selector, func = "sum", selector_position = "contains")
 }
 \arguments{
-\item{df}{Data frame input.}
+\item{df}{data frame input}
 
-\item{selector}{Text string to select column names.}
+\item{selector}{text string to select column names}
 
-\item{selector_position}{Dictates which string selecting function to use for column names. Must be either "containts", "starts_with", "ends_with".}
+\item{func}{function to apply to data (default is `sum`)}
 
-\item{fun}{Function to apply to data. Default is `sum`.}
+\item{selector_position}{dictates which string selecting function to use for column names. Must be either "containts", "starts_with", "ends_with".}
 }
 \description{
 Calculates summary scores of survey items into a vector. Targeted survey item names within a data frame must be named with a common string for filtering (e.g. "extraversion_1", "extraversion_2"). These common strings can be anywhere within the name.

@@ -1,10 +1,10 @@
 #' Survey Item Scorer
 #'
 #' Calculates summary scores of survey items into a vector. Targeted survey item names within a data frame must be named with a common string for filtering (e.g. "extraversion_1", "extraversion_2"). These common strings can be anywhere within the name.
-#' @param df Data frame input.
-#' @param selector Text string to select column names.
-#' @param fun Function to apply to data. Default is `sum`.
-#' @param selector_position Dictates which string selecting function to use for column names. Must be either "containts", "starts_with", "ends_with".
+#' @param df data frame input
+#' @param selector text string to select column names
+#' @param func function to apply to data (default is `sum`)
+#' @param selector_position dictates which string selecting function to use for column names. Must be either "containts", "starts_with", "ends_with".
 #' @author Robert S. Chavez
 #' @export
 #' @examples
