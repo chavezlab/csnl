@@ -17,33 +17,39 @@ dsm_plot <- function(dsm, col_n = 8, color_dir = 1, rev_fac=FALSE, melt=TRUE){
   library(ggplot2)
   library(colorRamps)
   library(viridis)
-
-  if(melt==TRUE){
+  if (melt == TRUE) {
     df <- dsm_mask(dsm)
-    }
+  } else{
 
-  if(rev_fac==FALSE){
-    df <- df[which(is.na(df[,3])==FALSE),]
-    df[,1] <- factor(df[,1])
-    df[,2] <- factor(df[,2])
-    df$Var1 <- df[,1]
-    df$Var2 <- df[,2]
-    df$value <- df[,3]
-    mytheme <- theme(panel.grid.minor=element_blank(), panel.grid.major=element_blank())
-    ggplot(df, aes(Var1,Var2,fill=value)) + geom_raster() + theme_minimal() + mytheme +
-      scale_fill_gradientn(colors = magma(col_n, direction = color_dir),name = "Dissimilarity") + xlab("") + ylab("")
+    df <- dsm
   }
-
-  else{
-    df <- dsm[which(is.na(df[,3])==FALSE),]
-    df[,1] <- factor(df[,1])
-    df[,2] <- factor(df[,2])
-    df[,2] <- factor(df[,2],levels = rev(levels(df[,2])))
-    df$Var1 <- df[,1]
-    df$Var2 <- df[,2]
-    df$value <- df[,3]
-    mytheme <- theme(panel.grid.minor=element_blank(), panel.grid.major=element_blank(), axis.text.x = element_text(angle = 300, hjust = 0))
-    ggplot(df, aes(Var1,Var2,fill=value)) + geom_raster() + theme_minimal() + mytheme +
-      scale_fill_gradientn(colors = magma(col_n, direction = color_dir),name = "Dissimilarity") + xlab("") + ylab("")
+  if (rev_fac == FALSE) {
+    df <- df[which(is.na(df[, 3]) == FALSE), ]
+    df[, 1] <- factor(df[, 1])
+    df[, 2] <- factor(df[, 2])
+    df$Var1 <- df[, 1]
+    df$Var2 <- df[, 2]
+    df$value <- df[, 3]
+    mytheme <- theme(panel.grid.minor = element_blank(),
+                     panel.grid.major = element_blank())
+    ggplot(df, aes(Var1, Var2, fill = value)) + geom_raster() +
+      theme_minimal() + mytheme + scale_fill_gradientn(colors = magma(col_n,
+                                                                      direction = color_dir), name = "Dissimilarity") +
+      xlab("") + ylab("")
+  } else {
+    df <- df[which(is.na(df[, 3]) == FALSE), ]
+    df[, 1] <- factor(df[, 1])
+    df[, 2] <- factor(df[, 2])
+    df[, 2] <- factor(df[, 2], levels = rev(levels(df[, 2])))
+    df$Var1 <- df[, 1]
+    df$Var2 <- df[, 2]
+    df$value <- df[, 3]
+    mytheme <- theme(panel.grid.minor = element_blank(),
+                     panel.grid.major = element_blank(), axis.text.x = element_text(angle = 300,
+                                                                                    hjust = 0))
+    ggplot(df, aes(Var1, Var2, fill = value)) + geom_raster() +
+      theme_minimal() + mytheme + scale_fill_gradientn(colors = magma(col_n,
+                                                                      direction = color_dir), name = "Dissimilarity") +
+      xlab("") + ylab("")
   }
 }
